@@ -1,7 +1,7 @@
 #include <iostream>
 #include <math.h>
 #include <ctime>
-void keySearch (char key,charkay,int  n,char array) {
+void keySearch (char *key, char *kay, int  n, char *array) {
     int start;
     start = clock();
     for (int b = 0; b!=1;) {
@@ -28,7 +28,7 @@ int main() {
     a = pow(a, n);
     std::cout<<"Amount of key variables: " << a << std::endl;
     n = n/4;
-    charkey = new char[n];
+    char *key = new char[n];
     char *kay = new char[n];
     char array [20] = {"0123456789ABCDEF"};
     std::cout<<"0x"; 
